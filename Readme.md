@@ -1,7 +1,7 @@
 # Reflexa
 
 This project consists of:
-* Alexa skill that repeats what user says
+* Alexa skill that simply repeats what user says
 
 ## Description:
 
