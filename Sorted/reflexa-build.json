@@ -1,0 +1,404 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "reflexa",
+      "intents": [
+        {
+          "name": "ReflexIntent",
+          "slots": [
+            {
+              "name": "Sentence",
+              "type": "Sentences"
+            }
+          ],
+          "samples": [
+            "{Sentence}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "Sentences",
+          "values": [
+            {
+              "name": {
+                "value": "Zig when one should zag"
+              }
+            },
+            {
+              "name": {
+                "value": "Zombie out"
+              }
+            },
+            {
+              "name": {
+                "value": "Zero in on"
+              }
+            },
+            {
+              "name": {
+                "value": "You are driving me crazy"
+              }
+            },
+            {
+              "name": {
+                "value": "You should get in shape"
+              }
+            },
+            {
+              "name": {
+                "value": "You have a wrong number"
+              }
+            },
+            {
+              "name": {
+                "value": "Xavier is the saviour"
+              }
+            },
+            {
+              "name": {
+                "value": "Xylitol is not a gum"
+              }
+            },
+            {
+              "name": {
+                "value": "Xerox it"
+              }
+            },
+            {
+              "name": {
+                "value": "Why didn't I think of that"
+              }
+            },
+            {
+              "name": {
+                "value": "We are in the same boat"
+              }
+            },
+            {
+              "name": {
+                "value": "Watch your language"
+              }
+            },
+            {
+              "name": {
+                "value": "This is just between you and me"
+              }
+            },
+            {
+              "name": {
+                "value": "Thanks for the compliment"
+              }
+            },
+            {
+              "name": {
+                "value": "That will be the day"
+              }
+            },
+            {
+              "name": {
+                "value": "Something's never changed"
+              }
+            },
+            {
+              "name": {
+                "value": "She is very sophisticated"
+              }
+            },
+            {
+              "name": {
+                "value": "Stay out of trouble"
+              }
+            },
+            {
+              "name": {
+                "value": "Road to hell is paved with good intentions"
+              }
+            },
+            {
+              "name": {
+                "value": "Read between the lines"
+              }
+            },
+            {
+              "name": {
+                "value": "Raining cats and dogs"
+              }
+            },
+            {
+              "name": {
+                "value": "Queer someone's pitch"
+              }
+            },
+            {
+              "name": {
+                "value": "Quake in one's boots"
+              }
+            },
+            {
+              "name": {
+                "value": "Quick off the mark"
+              }
+            },
+            {
+              "name": {
+                "value": "Please enjoy yourself"
+              }
+            },
+            {
+              "name": {
+                "value": "Pick it up"
+              }
+            },
+            {
+              "name": {
+                "value": "Poor thing"
+              }
+            },
+            {
+              "name": {
+                "value": "Once in a blue moon"
+              }
+            },
+            {
+              "name": {
+                "value": "Out of question"
+              }
+            },
+            {
+              "name": {
+                "value": "On the contrary"
+              }
+            },
+            {
+              "name": {
+                "value": "Nothing new about that"
+              }
+            },
+            {
+              "name": {
+                "value": "Nice talking to you"
+              }
+            },
+            {
+              "name": {
+                "value": "Now you are talking"
+              }
+            },
+            {
+              "name": {
+                "value": "Many thanks in advance"
+              }
+            },
+            {
+              "name": {
+                "value": "Maybe some other time"
+              }
+            },
+            {
+              "name": {
+                "value": "Make yourself at home"
+              }
+            },
+            {
+              "name": {
+                "value": "Let's go over it one more time"
+              }
+            },
+            {
+              "name": {
+                "value": "Let's give him a big hand"
+              }
+            },
+            {
+              "name": {
+                "value": "Let me think about it"
+              }
+            },
+            {
+              "name": {
+                "value": "Keep an eye on this, will you"
+              }
+            },
+            {
+              "name": {
+                "value": "Keep it confidential"
+              }
+            },
+            {
+              "name": {
+                "value": "Keep out of my way"
+              }
+            },
+            {
+              "name": {
+                "value": "Just a moment"
+              }
+            },
+            {
+              "name": {
+                "value": "Just kidding"
+              }
+            },
+            {
+              "name": {
+                "value": "Just about"
+              }
+            },
+            {
+              "name": {
+                "value": "In a sense, he is nothing but a suit"
+              }
+            },
+            {
+              "name": {
+                "value": "I am a little disappointed"
+              }
+            },
+            {
+              "name": {
+                "value": "I am aware of that"
+              }
+            },
+            {
+              "name": {
+                "value": "How many times do I have to say"
+              }
+            },
+            {
+              "name": {
+                "value": "Here is something for you"
+              }
+            },
+            {
+              "name": {
+                "value": "He didn't show up"
+              }
+            },
+            {
+              "name": {
+                "value": "Good talking to you"
+              }
+            },
+            {
+              "name": {
+                "value": "Get in the line"
+              }
+            },
+            {
+              "name": {
+                "value": "Give me a call"
+              }
+            },
+            {
+              "name": {
+                "value": "Fifty-fifty"
+              }
+            },
+            {
+              "name": {
+                "value": "Far from it"
+              }
+            },
+            {
+              "name": {
+                "value": "Follow me"
+              }
+            },
+            {
+              "name": {
+                "value": "Enough is enough"
+              }
+            },
+            {
+              "name": {
+                "value": "Enjoy your meal"
+              }
+            },
+            {
+              "name": {
+                "value": "Easy does it"
+              }
+            },
+            {
+              "name": {
+                "value": "Didn't I make myself clear"
+              }
+            },
+            {
+              "name": {
+                "value": "Don’t get too serious"
+              }
+            },
+            {
+              "name": {
+                "value": "Drive safely"
+              }
+            },
+            {
+              "name": {
+                "value": "Can you hear me now"
+              }
+            },
+            {
+              "name": {
+                "value": "Call me Sam, please"
+              }
+            },
+            {
+              "name": {
+                "value": "Come and get it"
+              }
+            },
+            {
+              "name": {
+                "value": "Be right back with you"
+              }
+            },
+            {
+              "name": {
+                "value": "Better late than never"
+              }
+            },
+            {
+              "name": {
+                "value": "Be my guest"
+              }
+            },
+            {
+              "name": {
+                "value": "Attention, please"
+              }
+            },
+            {
+              "name": {
+                "value": "A piece of cake"
+              }
+            },
+            {
+              "name": {
+                "value": "Any good ideas"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
