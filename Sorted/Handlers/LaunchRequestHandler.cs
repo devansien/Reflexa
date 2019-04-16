@@ -14,8 +14,8 @@ namespace Reflexa
                     AplHelper.SetMenu();
 
                 Core.response.SetSpeech(false, false,
-                    SpeechTemplate.GetWelcomeSpeech() + SpeechTemplate.GetShortHelpSpeech(),
-                    SpeechTemplate.GetWelcomeSpeech() + SpeechTemplate.GetShortHelpSpeech());
+                    SpeechTemplate.GetWelcomeSpeech() + SpeechTemplate.GetShortHelpSpeech() + SpeechTemplate.GetWhatWouldYouSpeech(),
+                    SpeechTemplate.GetShortHelpSpeech() + SpeechTemplate.GetWhatWouldYouSpeech());
 
                 await Task.Run(() => { });
             });

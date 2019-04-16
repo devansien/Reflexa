@@ -33,6 +33,7 @@ namespace Reflexa
             logger.Write($"System locale: [{request.Request.Locale}]");
             logger.Write($"Request detail: {JsonConvert.SerializeObject(request)}");
 
+            speech = SpeechSelectHelper.GetSpeech(request.Request.Locale);
             string userId = GetUserId(request);
             SetComponents(request, userId);
             await SetState();
