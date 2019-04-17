@@ -11,7 +11,7 @@ namespace Reflexa
                 Core.state.UserState.NumPlayed++;
 
                 if (Core.echo.HasScreen)
-                    AplHelper.SetMenu();
+                    AplHelper.SetMainPage("Say something to repeat....");
 
                 Core.response.SetSpeech(false, false,
                     SpeechTemplate.GetWelcomeSpeech() + SpeechTemplate.GetShortHelpSpeech() + SpeechTemplate.GetWhatWouldYouSpeech(),

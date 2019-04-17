@@ -50,11 +50,6 @@ namespace Reflexa
                 {
                     name = BuiltInRequest.SessionEndedRequest,
                     type = typeof(SessionEndedRequestHandler)
-                },
-                new RequestType
-                {
-                    name = BuiltInRequest.AplUserEventRequest,
-                    type = typeof(AplUserEventRequestHandler)
                 }
             };
         }

@@ -32,6 +32,12 @@ namespace Reflexa
             return whatWouldYouSpeeches[random.Next(whatWouldYouSpeeches.Count)];
         }
 
+        public static string GetWhatWouldYouNextSpeech()
+        {
+            List<string> whatWouldYouNextSpeeches = Core.speech.GetWhatWouldYouNextSpeeches();
+            return whatWouldYouNextSpeeches[random.Next(whatWouldYouNextSpeeches.Count)];
+        }
+
         public static string GetGoodbyeSpeech()
         {
             List<string> goodbyeSpeeches = Core.speech.GetGoodbyeSpeeches();

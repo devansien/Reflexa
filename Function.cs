@@ -21,7 +21,7 @@ namespace Reflexa
             SkillResponse response = Core.response.GetResponse();
             Core.logger.Write($"Response detail: {JsonConvert.SerializeObject(response)}");
             Core.logger.Write($"Latest user state detail: {JsonConvert.SerializeObject(Core.state)}");
-            Core.logger.Write($"**************** [{Skill.Title}] processing ended ****************");
+            Core.logger.Write($"**************** [{SkillSettings.Title}] processing ended ****************");
 
             return response;
         }

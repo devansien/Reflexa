@@ -8,6 +8,7 @@ namespace Reflexa
         List<string> GetShortHelpSpeeches();
         List<string> GetDetailedHelpSpeeches();
         List<string> GetWhatWouldYouSpeeches();
+        List<string> GetWhatWouldYouNextSpeeches();
         List<string> GetGoodbyeSpeeches();
         List<string> GetExceptionSpeeches();
     }

@@ -21,7 +21,6 @@ namespace Reflexa
         public static State state;
 
         public static RequestTypes requestTypes;
-        public static List<RequestType> customRequestTypes;
 
 
         public async Task Init(APLSkillRequest request, ILambdaContext context)
@@ -29,7 +28,7 @@ namespace Reflexa
             AddRequestConverters();
 
             logger = new Logger(context.Logger);
-            logger.Write($"**************** [{Skill.Title}] started ****************");
+            logger.Write($"**************** [{SkillSettings.Title}] started ****************");
             logger.Write($"System locale: [{request.Request.Locale}]");
             logger.Write($"Request detail: {JsonConvert.SerializeObject(request)}");
 

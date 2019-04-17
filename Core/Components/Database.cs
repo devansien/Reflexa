@@ -30,7 +30,7 @@ namespace Reflexa
         {
             DynamoDBContextConfig config = new DynamoDBContextConfig()
             {
-                TableNamePrefix = Skill.DbTablePrefix
+                TableNamePrefix = SkillSettings.DbTablePrefix
             };
 
             DbContext = new DynamoDBContext(Client, config);

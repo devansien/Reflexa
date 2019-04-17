@@ -11,6 +11,5 @@
         public const string CancelIntent = "AMAZON.CancelIntent";
 
         public const string SessionEndedRequest = "SessionEndedRequest";
-        public const string AplUserEventRequest = "Alexa.Presentation.APL.UserEvent";
     }
 }
