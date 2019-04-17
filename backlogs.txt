@@ -83,3 +83,12 @@ AWS lambda daynamo watch setup. need to upload basic ui files to s3.
 reflexintent handling added. responses refined, What would you like to say next adde.d.
 
 apl refined, now showing welcome message and uttrances.
+scroll rigth and left added. should be added to the ambient dev consoles too before adding languages
+reflexa submitted.
+more slots added to thuderstorm so now handlign invalid inputs by returnin could not find any recordings have "some",
+rather than  just saying unable to process //
+
+number / play number x need to be added to other ambienct
+other ambients and other language of thunderstorm shou;dhave the famous phrase slot value
+
+all of the json settings updated, need to be reformatted using alexa's json upload, save area,

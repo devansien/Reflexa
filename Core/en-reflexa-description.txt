@@ -1,0 +1,36 @@
+﻿----------------------------------------------------------------------------------------------------
+
+Reflexa
+
+----------------------------------------------------------------------------------------------------
+
+Reflexa is one of the most accurate "repeat what you say" skill.
+
+----------------------------------------------------------------------------------------------------
+
+Reflexa is one of the most accurate "repeat what you say" skill in the market.
+
+With Reflexa, you can simply say any words, numbers, or phrases for Alexa to repeat, without giving a pre-command like say, or repeat after me.
+
+All you have to do is just say what needs to be repeated.
+
+After the speech is given to Reflexa, it will display the heard speech back based on Alexa's speech recognition capabilities.
+
+This skill will be useful for not only regular users who want to check how their speech is converted into text, but also useful for developers to test potential use cases and the most recent recognition capabilities of Alexa.
+
+
+----------------------------------------------------------------------------------------------------
+
+Alexa, start reflexa
+
+Alexa, open reflexa
+
+----------------------------------------------------------------------------------------------------
+
+repeat, reflex, mimic, recognition, speech, text
+
+----------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------------------------
