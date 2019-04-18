@@ -18,6 +18,10 @@ namespace Reflexa
                     AplHelper.SetMainPage(utterance);
                 Sentence sentence = new Sentence { Utterance = utterance };
 
+                //char[] rawInput = utterance.ToCharArray();
+                //Array.Reverse(rawInput);
+                //string reversed = new string(rawInput);
+
                 Core.state.UserState.Sentences.Add(sentence);
                 Core.logger.Write($"Raw input value from user: [{utterance}]");
                 Core.response.SetSpeech(false, false, utterance, SpeechTemplate.GetWhatWouldYouNextSpeech());
