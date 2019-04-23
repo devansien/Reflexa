@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Reflexa
 {
-    public class Function
+    public class Function : Core
     {
         public async Task<SkillResponse> FunctionHandler(APLSkillRequest request, ILambdaContext context)
         {
@@ -17,11 +17,11 @@ namespace Reflexa
             await core.Init(request, context);
             await InvokeHandler(core);
 
-            await Core.database.SaveState();
-            SkillResponse response = Core.response.GetResponse();
-            Core.logger.Write($"Response detail: {JsonConvert.SerializeObject(response)}");
-            Core.logger.Write($"Latest user state detail: {JsonConvert.SerializeObject(Core.state)}");
-            Core.logger.Write($"**************** [{SkillSettings.Title}] processing ended ****************");
+            await Database.SaveState();
+            SkillResponse response = Response.GetResponse();
+            Logger.Write($"Response detail: {JsonConvert.SerializeObject(response)}");
+            Logger.Write($"Latest user state detail: {JsonConvert.SerializeObject(State)}");
+            Logger.Write($"**************** [{SkillSettings.Title}] processing ended ****************");
 
             return response;
         }
