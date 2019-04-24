@@ -1,5 +1,6 @@
 ﻿using Alexa.NET.Request;
 using Alexa.NET.Request.Type;
+using Google.Cloud.TextToSpeech.V1;
 using Google.Cloud.Translation.V2;
 using System;
 using System.Threading.Tasks;
@@ -16,31 +17,43 @@ namespace Reflexa
                 Slot slot = request.Intent.Slots[SkillSettings.SentenceSlot];   // change the slot name to utterance, and also skill settings
                 string rawInput = slot.Value;
 
-                if (Echo.HasScreen)
-                    PageBuilder.SetMainPage(rawInput);
-
                 Utterance utterance = new Utterance
                 {
                     Input = rawInput,
                     Time = DateTime.UtcNow
                 };
 
-                char[] letters = utterance.Input.ToCharArray();
-                Array.Reverse(letters);
-                string reversed = new string(letters);
+                string reversed = GetReversedText(utterance.Input);
 
-                string targetLanguage = "pl";   // lang keys needed
-                TranslationClient client = TranslationClient.Create();
-                TranslationResult translated = client.TranslateText(utterance.Input, targetLanguage);
+                string locale = "pl";   // lang keys needed
+                string translated = GetTranslatedText(utterance.Input, locale);
+                //TextToSpeechClient
+
+                if (Echo.HasScreen)
+                    PageBuilder.SetMainPage(utterance.Input);
 
                 Logger.Write($"Original value from user: [{utterance}]");
                 Logger.Write($"Reversed text: [{reversed}]");
-                Logger.Write($"Translated text to {targetLanguage}: [{translated.TranslatedText}]");  // set system locale to translated text
+                Logger.Write($"Translated text to {locale}: [{translated}]");  // set system locale to translated text
 
                 Response.SetSpeech(false, false, utterance.Input, SpeechTemplate.GetWhatWouldYouNextSpeech());
                 State.Utterances.Add(utterance);
                 await Task.Run(() => { });
             });
+        }
+
+        private string GetReversedText(string text)
+        {
+            char[] letters = text.ToCharArray();
+            Array.Reverse(letters);
+            return new string(letters);
+        }
+
+        private string GetTranslatedText(string text, string targetLanguage)
+        {
+            TranslationClient client = TranslationClient.Create();
+            TranslationResult result = client.TranslateText(text, targetLanguage);
+            return result.TranslatedText;
         }
     }
 }

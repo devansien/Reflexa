@@ -7,12 +7,12 @@
           "name": "ReflexIntent",
           "slots": [
             {
-              "name": "Sentence",
-              "type": "Sentences"
+              "name": "Utterance",
+              "type": "Utterances"
             }
           ],
           "samples": [
-            "{Sentence}"
+            "{Utterance}"
           ]
         },
         {
@@ -30,11 +30,23 @@
         {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
+        },
+        {
+          "name": "LocaleIntent",
+          "slots": [
+            {
+              "name": "Language",
+              "type": "Languages"
+            }
+          ],
+          "samples": [
+            "{Language}"
+          ]
         }
       ],
       "types": [
         {
-          "name": "Sentences",
+          "name": "Utterances",
           "values": [
             {
               "name": {
@@ -394,6 +406,81 @@
             {
               "name": {
                 "value": "Any good ideas"
+              }
+            },
+            {
+              "name": {
+                "value": "Language"
+              }
+            },
+            {
+              "name": {
+                "value": "Priority"
+              }
+            },
+            {
+              "name": {
+                "value": "Please"
+              }
+            },
+            {
+              "name": {
+                "value": "Single"
+              }
+            },
+            {
+              "name": {
+                "value": "Take"
+              }
+            },
+            {
+              "name": {
+                "value": "Lack"
+              }
+            },
+            {
+              "name": {
+                "value": "God"
+              }
+            },
+            {
+              "name": {
+                "value": "My"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Languages",
+          "values": [
+            {
+              "name": {
+                "value": "Japanese"
+              }
+            },
+            {
+              "name": {
+                "value": "Italian"
+              }
+            },
+            {
+              "name": {
+                "value": "Spanish"
+              }
+            },
+            {
+              "name": {
+                "value": "English"
+              }
+            },
+            {
+              "name": {
+                "value": "French"
+              }
+            },
+            {
+              "name": {
+                "value": "German"
               }
             }
           ]
