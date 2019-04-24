@@ -1,6 +1,5 @@
 ﻿using Alexa.NET.Request;
 using Alexa.NET.Request.Type;
-using Google.Cloud.TextToSpeech.V1;
 using Google.Cloud.Translation.V2;
 using System;
 using System.Threading.Tasks;
@@ -27,7 +26,6 @@ namespace Reflexa
 
                 string locale = "pl";   // lang keys needed
                 string translated = GetTranslatedText(utterance.Input, locale);
-                //TextToSpeechClient
 
                 if (Echo.HasScreen)
                     PageBuilder.SetMainPage(utterance.Input);
