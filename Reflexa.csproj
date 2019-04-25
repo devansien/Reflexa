@@ -11,11 +11,17 @@
     <PackageReference Include="Alexa.NET.APL" Version="3.11.0" />
     <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.100.7" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101" />
+    <PackageReference Include="AWSSDK.Polly" Version="3.3.101.4" />
+    <PackageReference Include="AWSSDK.S3" Version="3.3.101.8" />
     <PackageReference Include="Google.Cloud.TextToSpeech.V1" Version="1.0.0-beta01" />
     <PackageReference Include="Google.Cloud.Translation.V2" Version="1.1.0" />
+    <PackageReference Include="NAudio" Version="1.8.5" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Lame\lame_enc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Reflexa-3ee3c9624de2.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
