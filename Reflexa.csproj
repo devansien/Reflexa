@@ -8,6 +8,7 @@
     <Company>Ansien</Company>
     <AssemblyVersion>0.2.0.0</AssemblyVersion>
     <FileVersion>0.2.0.0</FileVersion>
+    <Description>Alexa speech calibration checker</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Alexa.NET.APL" Version="3.11.0" />
