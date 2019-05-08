@@ -3,26 +3,17 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AWSProjectType>Lambda</AWSProjectType>
-    <Version>0.2.0</Version>
+    <Version>1.2.0</Version>
     <Authors>devansien</Authors>
     <Company>Ansien</Company>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <FileVersion>0.2.0.0</FileVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
     <Description>Alexa speech calibration checker</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Alexa.NET.APL" Version="3.11.0" />
+    <PackageReference Include="Alexa.NET.APL" Version="3.13.0" />
     <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
-    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.3" />
-    <PackageReference Include="AWSSDK.Polly" Version="3.3.101.7" />
-    <PackageReference Include="AWSSDK.S3" Version="3.3.101.11" />
-    <PackageReference Include="Google.Cloud.TextToSpeech.V1" Version="1.0.0-beta01" />
-    <PackageReference Include="Google.Cloud.Translation.V2" Version="1.1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="Reflexa-3ee3c9624de2.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.6" />
   </ItemGroup>
 </Project>
