@@ -1,9 +1,5 @@
 ﻿using Alexa.NET.Request;
 using Alexa.NET.Request.Type;
-using Amazon.Polly;
-using Amazon.Polly.Model;
-using Amazon.S3;
-using Amazon.S3.Model;
 //using Google.Cloud.TextToSpeech.V1;
 using Google.Cloud.Translation.V2;
 //using NAudio.Lame;

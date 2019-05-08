@@ -58,6 +58,7 @@ namespace Reflexa
         {
             Session session = request.Session;
             APLContext skillContext = request.Context;
+
             return session != null ? session.User.UserId : skillContext.System.User.UserId;
         }
 
@@ -80,6 +81,7 @@ namespace Reflexa
         {
             MethodBase handler = requestType.GetMethod(BuiltInRequest.RequestHandler,
                 BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+
             return handler;
         }
 

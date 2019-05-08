@@ -40,6 +40,7 @@ namespace Reflexa
                 if (request.Context.Viewport == null)
                 {
                     request.Context.Viewport = SessionHelper.Get<AlexaViewport>(SessionKey.Viewport);
+
                     return request.Context.Viewport;
                 }
                 else

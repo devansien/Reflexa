@@ -40,6 +40,7 @@ namespace Reflexa
         {
             Save = await DbContext.LoadAsync<State>(UserId);
             Save = StateHelper.ValidateState(UserId, Save);
+
             return Save;
         }
 

@@ -71,6 +71,7 @@ namespace Reflexa
             StringBuilder builder = new StringBuilder();
             foreach (string reprompt in reprompts)
                 builder.Append(reprompt);
+
             return builder.ToString();
         }
 

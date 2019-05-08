@@ -21,5 +21,5 @@ This project consists of:
 ```
     3. Built for what?
 
-	   * Voice callibration check.
+	   * Voice calibration check.
 ```

@@ -11,6 +11,7 @@ namespace Reflexa
                 Response.SetSpeech(false, false,
                     SpeechTemplate.GetDetailedHelpSpeech() + SpeechTemplate.GetWhatWouldYouSpeech(),
                     SpeechTemplate.GetShortHelpSpeech() + SpeechTemplate.GetWhatWouldYouSpeech());
+
                 await Task.Run(() => { });
             });
         }

@@ -54,6 +54,7 @@ namespace Reflexa
             Session session = Input.GetRequest().Session;
             if (session != null & session.Attributes != null)
                 return session.Attributes.ContainsKey(key) ? true : false;
+
             return false;
         }
 
