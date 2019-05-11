@@ -1,19 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AWSProjectType>Lambda</AWSProjectType>
-    <Version>1.2.0</Version>
-    <Authors>devansien</Authors>
     <Company>Ansien</Company>
+    <Authors>devansien</Authors>
+    <Version>1.2.0</Version>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
+    <Product>Reflexa</Product>
     <Description>Alexa speech calibration checker</Description>
   </PropertyGroup>
+  
   <ItemGroup>
-    <PackageReference Include="Alexa.NET.APL" Version="3.13.0" />
+    <PackageReference Include="Alexa.NET.APL" Version="3.14.0" />
     <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.7" />
   </ItemGroup>
+  
 </Project>
